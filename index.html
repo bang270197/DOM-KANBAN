@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">  
+</head>
+  <body>
+      <!-- Tiêu đề -->
+    <h1 class="title">Ứng dụng quản lý kanban</h1>
+    <!-- Kanban -->
+    <div class="kanban">
+        <!-- Cột hiển thị các task nhiệm vụ -->
+        <div id="todoColumn" name="todo" class="kanban__col">
+            <h3 class="kanban__title todo-bg">Nhiệm vụ<span class="kanban__count"></span></h3>
+            <div class="kanban__box">
+                <!-- <textarea draggable="true" class="kanban__item todo-border-color"></textarea>
+                <div class="wrap-item">
+                    <textarea class="kanban__item todo-border-color"></textarea>
+                    <button class="saveBtn"><i class="fas fa-check"></i></button>
+                    <button class="removeBtn"><i class="fas fa-times"></i></button>
+                </div> -->
+            </div>
+            <button name="todo" class="addBtn">
+                <span class="wrap-icon">
+                    <i class="fas fa-plus"></i>
+                </span>Thêm mới
+            </button>
+        </div>
+        <!-- Cột hiển thị các task đang làm -->
+        <div id="doingColumn" name="doing" class="kanban__col">
+            <h3 class="kanban__title doing-bg">Đang làm<span class="kanban__count">2</span></h3>
+            <div class="kanban__box">
+                <!-- <textarea class="kanban__item doing-border-color"></textarea> -->
+            </div>
+            <button name="doing" class="addBtn">
+                <span class="wrap-icon">
+                    <i class="fas fa-plus"></i>
+                </span> Thêm mới
+            </button>
+        </div>
+        <!-- Cột hiển thị các task đã hoàn thành -->
+        <div id="doneColumn" name="done" class="kanban__col">
+            <h3 class="kanban__title done-bg">Hoàn thành<span class="kanban__count">8</span></h3>
+            <div class="kanban__box">
+                <!-- <textarea class="kanban__item done-border-color"></textarea> -->
+            </div>
+            <button name="done" class="addBtn">
+                <span class="wrap-icon">
+                    <i class="fas fa-plus"></i>
+                </span> Thêm mới
+            </button>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>  
+</body>
+</html>
